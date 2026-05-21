@@ -315,6 +315,22 @@ a:focus-visible, button:focus-visible {
   justify-content: center;
   position: relative;
 }
+.hero-card-img.photo-mode {
+  width: 260px;
+  height: 320px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: none;
+}
+
+.hero-card-img.photo-mode img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 .camera-icon { color: var(--gold); position: relative; z-index: 1; }
 .lens-ring {
   position: absolute;
