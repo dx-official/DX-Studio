@@ -609,11 +609,18 @@ a:focus-visible, button:focus-visible {
   transition: transform .5s cubic-bezier(.4,0,.2,1);
   position: relative;
 }
+.portfolio-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 .portfolio-img::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 30% 30%, rgba(255,255,255,.15) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(17,24,39,.25), rgba(17,24,39,.04));
 }
 .portfolio-item:hover .portfolio-img { transform: scale(1.06); }
 .portfolio-overlay {
@@ -971,6 +978,7 @@ a.contact-value:hover { color: var(--gold); }
   .hero-stats { justify-content: center; gap: 1.25rem; }
   .hero-visual { order: -1; }
   .hero-card { width: 240px; height: 280px; }
+  .hero-card-img.photo-mode { width: 210px; height: 250px; }
   .badge-top { right: -12px; }
   .badge-bottom { left: -12px; }
   .hero-float-card { bottom: -12px; right: -12px; }
@@ -1010,6 +1018,7 @@ a.contact-value:hover { color: var(--gold); }
   .hero-ctas { flex-direction: column; align-items: center; }
   .hero-ctas .btn { width: 100%; justify-content: center; }
   .hero-card { width: 200px; height: 240px; }
+  .hero-card-img.photo-mode { width: 176px; height: 212px; }
   .camera-icon svg { width: 40px; height: 40px; }
   .hero-float-card { display: none; }
   .badge-top, .badge-bottom { font-size: .65rem; }
